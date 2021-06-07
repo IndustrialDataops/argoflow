@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "argoflow"
+version = "0.1.0"
+description = ""
+authors = ["Krishna <gopalkrishna.naredla@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyyaml = "^5.4.1"
+networkx = "^2.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,15 @@
+Containers :
+  - name       : sparkrunner      
+    image      : pydeequ:0.1.7
+    command    : ["/bin/bash","/home/pydeequ/sample.sh"]
+Resources:  
+  - name             : sparkk8sScala
+    action           : create
+    successCondition : status.applicationState.state == COMPLETED
+    failureCondition : status.applicationState.state == FAILED
+    sparkVersion     : 3.0.0
+    mode             : cluster
+    image            : gcr.io/spark-operator/spark:v3.0.0-gcs-prometheus
+    imagepullpolicy  : Always
+    prometheusJar    : /prometheus/jmx_prometheus_javaagent-0.11.0.jar
+    prometheusPort   : 8090
