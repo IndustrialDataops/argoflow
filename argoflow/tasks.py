@@ -154,7 +154,7 @@ class taskFlow(metaclass=TaskMeta):
             print(e)
         return "{0} added ".format(name)
 
-    def runJob(
+    def addJob(
         self,
         name: str,
         parameters: List[Dict[str, str]] = None,
