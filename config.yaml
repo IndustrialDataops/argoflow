@@ -1,5 +1,5 @@
 Containers :
-  - name       : sparkrunner      
+  - name       : jobprofilerclient      
     image      : pydeequ:0.1.7
     command    : ["/bin/bash","/home/pydeequ/sample.sh"]
 Resources:  

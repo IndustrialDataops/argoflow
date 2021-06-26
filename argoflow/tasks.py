@@ -165,7 +165,7 @@ class taskFlow(metaclass=TaskMeta):
         taskDict: Dict[str, Any] = {}
         taskDict["name"] = name
         taskDict["dependencies"] = dependencies
-        taskDict["template"] = "sparkrunner"
+        taskDict["template"] = "customJob"
         self.dependencies.append({name: dependencies})
         try:
             taskDict["arguments"] = V1alpha1Arguments(parameters=parameters)
