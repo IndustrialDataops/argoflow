@@ -4,7 +4,7 @@ Argo Workflow automation is driven by yaml templates that are desined using the 
 
 Pipeline API  makes use of the Argo models defined in the [Argo Python client](https://github.com/argoproj-labs/argo-client-python) repository
 
-## Why pipeline API
+## Why Pipeline API
 
 * Hide infrastructure/underlying image details from the end user
 * Embedding python code into other existing automation scripts 
