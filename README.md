@@ -1,10 +1,10 @@
-# Helix Pipeline API
+# Pipeline API
 
 Argo Workflow automation is driven by yaml templates that are desined using the  ADSL (Argo Domain Specific Language). More examples for the same can be found [here](https://github.com/argoproj/argo-workflows/tree/master/examples)
 
-Helix Pipeline API  makes use of the Argo models defined in the [Argo Python client](https://github.com/argoproj-labs/argo-client-python) repository
+Pipeline API  makes use of the Argo models defined in the [Argo Python client](https://github.com/argoproj-labs/argo-client-python) repository
 
-## Why helix pipeline API
+## Why pipeline API
 
 * Hide infrastructure/underlying image details from the end user
 * Embedding python code into other existing automation scripts 
